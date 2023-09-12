@@ -1,5 +1,3 @@
-### Asphalt-Theme
-
 <p align="center">
   <img src="./images/Icon-Asphalt-Theme.png" alt="MakBit Asphalt Theme Logo" width="150">
 </p>
