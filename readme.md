@@ -1,7 +1,9 @@
 # [Asphalt Theme](https://github.com/makbit/Asphalt-Theme/)
-
 **An innovative and ultra-dark bright color theme for Visual Studio Code.**
 
+<p align="center">
+  <img src="./images/Icon-Asphalt-Theme.png" alt="MakBit Asphalt Theme Icon" width="150">
+</p>
 <p align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=makbit.makbit-asphalt-theme">
     <img alt="Version" src="https://img.shields.io/visual-studio-marketplace/v/makbit.makbit-asphalt-theme?style=for-the-badge" />
