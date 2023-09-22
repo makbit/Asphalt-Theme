@@ -1,7 +1,7 @@
 {
 	"name": "makbit-asphalt-theme",
-	"displayName": "MakBit Asphalt Theme",
-	"description": "A dark innovative style color theme for Visual Studio Code",
+	"displayName": "Asphalt Theme",
+	"description": "A dark innovative style bright color theme for Visual Studio Code",
 	"version": "1.0.0",
 	"publisher": "makbit",
 	"author": "makbit",
@@ -25,14 +25,17 @@
 	"categories": [
 		"Themes"
 	],
-	"keywords": [ "Theme", "Asphalt", "MakBit", "Night", "Dark" ],
+	"keywords": [ "Asphalt", "Theme", "MakBit", "Night", "Dark", "Bright" ],
 	"contributes": {
 		"themes": [
 			{
-				"label": "MakBit Asphalt",
+				"label": "Asphalt Theme",
 				"uiTheme": "vs-dark",
 				"path": "./themes/makbit-asphalt.json"
 			}
 		]
-	}
+	},
+	"__metadata": {
+    "publisherDisplayName": "makbit"
+  }
 }
