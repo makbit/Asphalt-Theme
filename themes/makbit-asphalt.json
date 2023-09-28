@@ -128,8 +128,8 @@
 
 	"__Check...":                           "+/",
 	"editorLineNumber.foreground":          "#777",
-	"editorLineNumber.activeForeground":    "#8CF",
-	"editorGutter.background":              "#123",
+	"editorLineNumber.activeForeground":    "#CF0",
+	"editorGutter.background":              "#012",
 	"editorGutter.modifiedBackground":      "#0FF8",
 	"editorGutter.addedBackground":         "#0F08",
 	"editorGutter.deletedBackground":       "#A408",
@@ -186,7 +186,8 @@
 
 	"__Panel: Debugger console":       "-/+",
 	"editorHint.foreground":           "#8F0",
-	"editorInfo.foreground":           "#0F8",
+	"editorInfo.foreground":           "#4FF",
+	"ZeditorInfo.foreground":          "#0F8",
 	"editorWarning.border":            "#F40",
 	"editorWarning.foreground":        "#F80",
 	"double (not used)":               "-",
@@ -366,66 +367,86 @@
 	"name": "Doxygen Keyword",
 	"scope": "storage.type.class.doxygen",
 	"settings": {
-		"foreground": "#672"
+		"foreground": "#782"
 		}
 	},
 	{
 	"name": "Punctuation",
-	"scope": "punctuation.section, punctuation.separator, punctuation.terminator, punctuation.definition.arguments, punctuation.definition.tag, punctuation.definition.capture, meta.brace",
+	"scope": "punctuation.section, punctuation.separator, punctuation.terminator, punctuation.definition.arguments, punctuation.definition.tag, punctuation.definition.capture, meta.brace, meta.structure.dictionary",
 	"settings": {
 		"foreground": "#FFF"
 		}
 	},
 	{
 	"name": "Keyword, Operator",
-	"scope": "keyword.other, keyword.operator, storage.modifier.reference",
+	"scope": "keyword.other, keyword.operator, storage.modifier.reference, keyword.other.namespace, storage.type.namespace",
 	"settings": {
+		"fontStyle": "normal",
 		"foreground": "#FFF"
 		}
 	},
-
-
 	{
 	"name": "Control",
 	"scope": "keyword.control",
 	"settings": {
 		"fontStyle": "bold",
-		"foreground": "#FFF" // white     "#82F" // purple     
+		"foreground": "#FFF"
 		}
 	},
+
+
+
 	{
 	"name": "Namespace",
 	"scope": "entity.name.namespace",
 	"settings": {
 		"fontStyle": "bold",
-		"foreground": "#FFF" // white     "#FF0" // yellow
+		"foreground": "#FFF" // white // "#8CF" cyan
 		}
 	},
 	{
-	"name": "Label",
-	"scope": "entity.name.label",
+	"name": "Storage modifier (extern, friend, const)",
+	"scope": "storage.modifier",
 	"settings": {
-		"fontStyle": "bold",
-		"foreground": "#B05" // malina+
+		"fontStyle": "normal",
+		"foreground": "#FFF" // white
+		}
+	},
+	{
+	"name": "Storage Type (int/class/enum)",
+	"scope": "storage.type",
+	"settings": {
+		"fontStyle": "normal",
+		"foreground": "#FFF" // white
+		}
+	},
+	{
+	"name": "Type (class/struct/enum) name",
+	"scope": "entity.name.type, entity.name.type.class",
+	"settings": {
+		"fontStyle": "normal",
+		"foreground": "#FFF" // "#4FF" cyan   "#4AF" sky
 		}
 	},
 
+	
 
 	{
 	"name": "Number",
 	"scope": "constant, constant.numeric, keyword.other.unit",
 	"settings": {
-		"foreground": "#F0F" // magenta
+		"foreground": "#F0F" // magenta "#F0F"
 		}
 	},
 	{
 	"name": "Constant",
 	"scope": "constant.language, constant.other, support.constant, entity.name.type.parameter",
 	"settings": {
-		"fontStyle": "bold",
-		"foreground": "#F0F" // magenta     "#B1A" // mid magenta
+		"fontStyle": "normal",
+		"foreground": "#F0F" // "#F40" orange // "#82F" purple // "#C05" malina+
 		}
 	},
+
 
 
 	{
@@ -446,7 +467,7 @@
 	"name": "Preprocessor: (#include, #define), meta.preprocessor, meta.preprocessor.include",
 	"scope": "keyword.control.directive, punctuation.definition.directive",
 	"settings": {
-		"foreground": "#14A" // dark blue               "#82F" // purple 
+		"foreground": "#14A" // dark blue  "#82F" // purple 
 		}
 	},
 	{
@@ -456,38 +477,17 @@
 		"foreground": "#28F" // light blue
 		}
 	},
-
-
-
-
-
 	{
-	"name": "Storage Type (int/class/enum)",
-	"scope": "storage.type",
-	"settings": {
-		"foreground": "#FFF" // white
-		}
-	},
-	{
-	"name": "Storage modifier (extern, friend, const)",
-	"scope": "storage.modifier",
-	"settings": {
-		"fontStyle": "normal",
-		"foreground": "#FFF" // white
-		}
-	},
-
-
-	{
-	"name": "Type (class/struct/enum) name",
-	"scope": "!!!!!!!entity.name.type",
+	"name": "Label",
+	"scope": "entity.name.label",
 	"settings": {
 		"fontStyle": "bold",
-		"foreground": "#FFF" // white
+		"foreground": "#F40" // orange  // "#82F" violet
 		}
 	},
 
-
+	
+		
 	{
 	"name": "Function",
 	"scope": "entity.name.function.definition, entity.name.function.call, support.function, meta.function-call.generic",
@@ -499,7 +499,7 @@
 	"name": "Class member-function",
 	"scope": "entity.name.function.member",
 	"settings": {
-		"foreground": "#2F8" //emerald    "#5DE" //cyan "#FF0" // yellow      //  #807 // purple, malina #65C,  #A14
+		"foreground": "#2F8" //emerald
 		}
 	},
 	{
@@ -511,36 +511,12 @@
 	},
 	
 	
-	
-	{
-	"name": "Tag name",
-	"scope": "entity.name.tag",
-	"settings": {
-		"foreground": "#82F" // purple "#1AB" // mid cyan
-		}
-	},
-	{
-	"name": "Attribute name",
-	"scope": "entity.other.attribute-name",
-	"settings": {
-		"foreground": "#28F" // light blue
-		}
-	},
-	{
-	"name": "Text HTML",
-	"scope": "text.html",
-	"settings": {
-		"foreground": "#ED0" // sand-yellow
-		}
-	},
-
-
 
 	{
 	"name": "Other",
-	"scope": "source, XXvariable",
+	"scope": "source, variable",
 	"settings": {
-		"XXXforeground": "#800" ///!!!!! FIX
+		"foreground": "#4AF" ///!!!!!  "#8BF" check
 		}
 	},
 
@@ -553,17 +529,25 @@
 		}
 	},
 	{
+	"name": "Variable Global",
+	"scope": "variable.other.global",
+	"settings": {
+		"fontStyle": "bold",
+		"foreground": "#FF0" // yellow  "#DF8" sand
+		}
+	},
+	{
 	"name": "Class (member) variable",
 	"scope": "variable.other.class, variable.other.property, meta.property.class, meta.property.object, meta.parameter.optional",
 	"settings": {
-		"foreground": "#FD3" // sand
+		"foreground": "#DF4" // lemon
 		}
 	},
 	{
 	"name": "Function arg",
-	"scope": "variable.parameter, variable.parameter.preprocessor, meta.function.argument",
+	"scope": "variable.parameter, variable.parameter.preprocessor, meta.function.argument, meta.function-call.arguments",
 	"settings": {
-		"foreground": "#FA4" // mandarin       "#F50" // orange    "#C80" // dark yellow
+		"foreground": "#FA4" // mandarin  "#C80" // dark yellow
 		}
 	},
 
@@ -573,18 +557,35 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+	
+	{
+	"name": "HTML Tag name",
+	"scope": "entity.name.tag",
+	"settings": {
+		"foreground": "#82F" // purple "#1AB" // mid cyan
+		}
+	},
+	{
+	"name": "HTML Attribute name",
+	"scope": "entity.other.attribute-name, meta.attribute, support.type.property-name",
+	"settings": {
+		"foreground": "#FD0" // yellow "#28F" light blue
+		}
+	},
+	{
+	"name": "HTML Text",
+	"scope": "text.html",
+	"settings": {
+		"foreground": "#EEE" // "#ED0" sand-yellow
+		}
+	},
+	{
+	"name": "CSS & JSON String",
+	"scope": "string.quoted.double",
+	"settings": {
+		"foreground": "#3B3" // forest
+		}
+	},
 
 
 
