@@ -36,7 +36,7 @@
 	"statusBar.noFolderForeground":    "#000",
 	"statusBar.noFolderBackground":    "#ABC",
 	"statusBar.debuggingForeground":   "#FFF",
-	"statusBar.debuggingBackground":   "#602",
+	"statusBar.debuggingBackground":   "#D41",
 	"statusBarItem.activeBackground":  "#579",
 	"statusBarItem.hoverBackground":   "#777A",
 	"statusBarItem.prominentForeground":"#FF8",
@@ -138,9 +138,9 @@
 	"editor.selectionForeground":           "#FFF",
 	"editor.selectionBackground":           "#15A5",
 	"editor.inactiveSelectionBackground":   "#15A4",
-	"editor.hoverHighlightBackground":      "#28E8",
-	"editor.selectionHighlightBackground":  "#5555",
-	"editor.selectionHighlightBorder":      "#0505",
+	"editor.hoverHighlightBackground":      "#15A8",
+	"editor.selectionHighlightBackground":  "#333",
+	"editor.selectionHighlightBorder":      "#4444",
 
 	"_Ruler is a page area mark at 80":     "grey",
 	"editorRuler.foreground":               "#222",
@@ -156,7 +156,7 @@
 	"editor.findMatchHighlightBackground":  "#0F04",
 	"editor.findRangeHighlightBackground":  "#0F04",
 	"editor.rangeHighlightBackground":      "#0704",
-	"editorLink.activeForeground":         "#28E",
+	"editorLink.activeForeground":          "#28E",
 
 	"___Pop-up windows in editor and IDE":     "+",
 	"editorSuggestWidget.border":              "#28E",
@@ -352,11 +352,11 @@
   },
 
 
-  "token_info_press": "Ctrl+shift+P -> enter",
 
 
 "tokenColors": [
 	{
+	"token_info_press": "Ctrl+shift+P -> enter",
 	"name": "Comment",
 	"scope": "comment, comment.block, punctuation.definition.comment",
 	"settings": {
@@ -401,7 +401,7 @@
 	"scope": "entity.name.namespace",
 	"settings": {
 		"fontStyle": "bold",
-		"foreground": "#FFF" // white // "#8CF" cyan
+		"foreground": "#FFF"
 		}
 	},
 	{
@@ -409,7 +409,7 @@
 	"scope": "storage.modifier",
 	"settings": {
 		"fontStyle": "normal",
-		"foreground": "#FFF" // white
+		"foreground": "#FFF"
 		}
 	},
 	{
@@ -417,7 +417,7 @@
 	"scope": "storage.type",
 	"settings": {
 		"fontStyle": "normal",
-		"foreground": "#FFF" // white
+		"foreground": "#FFF"
 		}
 	},
 	{
@@ -425,17 +425,16 @@
 	"scope": "entity.name.type, entity.name.type.class",
 	"settings": {
 		"fontStyle": "normal",
-		"foreground": "#FFF" // "#4FF" cyan   "#4AF" sky
+		"foreground": "#FFF"
 		}
 	},
 
 	
-
 	{
 	"name": "Number",
 	"scope": "constant, constant.numeric, keyword.other.unit",
 	"settings": {
-		"foreground": "#F0F" // magenta "#F0F"
+		"foreground": "#F0F"
 		}
 	},
 	{
@@ -443,7 +442,8 @@
 	"scope": "constant.language, constant.other, support.constant, entity.name.type.parameter",
 	"settings": {
 		"fontStyle": "normal",
-		"foreground": "#F0F" // "#F40" orange // "#82F" purple // "#C05" malina+
+		"my_Alt": "#F40 orange or #82F purple or #C05 malina+",
+		"foreground": "#F0F"
 		}
 	},
 
@@ -453,28 +453,28 @@
 	"name": "Enum value",
 	"scope": "variable.other.enummember",
 	"settings": {
-		"foreground": "#1AB" // light cyan
+		"foreground": "#1AB"
 		}
 	},
 	{
 	"name": "String",
 	"scope": "string, string.unquoted.label, constant.character, constant.other.object.key, meta.object-literal.key",
 	"settings": {
-		"foreground": "#282" // mid green
+		"foreground": "#282"
 		}
 	},
 	{
 	"name": "Preprocessor: (#include, #define), meta.preprocessor, meta.preprocessor.include",
 	"scope": "keyword.control.directive, punctuation.definition.directive",
 	"settings": {
-		"foreground": "#14A" // dark blue  "#82F" // purple 
+		"foreground": "#14A"
 		}
 	},
 	{
 	"name": "Preprocessor: (Macro code), meta.preprocessor.macro",
 	"scope": "entity.name.function.preprocessor",
 	"settings": {
-		"foreground": "#28F" // light blue
+		"foreground": "#28F"
 		}
 	},
 	{
@@ -482,7 +482,7 @@
 	"scope": "entity.name.label",
 	"settings": {
 		"fontStyle": "bold",
-		"foreground": "#F40" // orange  // "#82F" violet
+		"foreground": "#F40"
 		}
 	},
 
@@ -492,21 +492,21 @@
 	"name": "Function",
 	"scope": "entity.name.function.definition, entity.name.function.call, support.function, meta.function-call.generic",
 	"settings": {
-		"foreground": "#3E2" // green  "#248" // deep blue
+		"foreground": "#3E2"
 		}
 	},
 	{
 	"name": "Class member-function",
 	"scope": "entity.name.function.member",
 	"settings": {
-		"foreground": "#2F8" //emerald
+		"foreground": "#2F8"
 		}
 	},
 	{
 	"name": "Class operator",
 	"scope": "entity.name.function.operator",
 	"settings": {
-		"foreground": "#FFF" //white
+		"foreground": "#FFF"
 		}
 	},
 	
@@ -516,7 +516,7 @@
 	"name": "Other",
 	"scope": "source, variable",
 	"settings": {
-		"foreground": "#4AF" ///!!!!!  "#8BF" check
+		"foreground": "#EEE"
 		}
 	},
 
@@ -525,7 +525,7 @@
 	"name": "Variable",
 	"scope": "variable.language, variable.function, variable.other, support.variable.property, meta.parens",
 	"settings": {
-		"foreground": "#FF0" // yellow
+		"foreground": "#FF0"
 		}
 	},
 	{
@@ -533,21 +533,21 @@
 	"scope": "variable.other.global",
 	"settings": {
 		"fontStyle": "bold",
-		"foreground": "#FF0" // yellow  "#DF8" sand
+		"foreground": "#FF0"
 		}
 	},
 	{
 	"name": "Class (member) variable",
 	"scope": "variable.other.class, variable.other.property, meta.property.class, meta.property.object, meta.parameter.optional",
 	"settings": {
-		"foreground": "#DF4" // lemon
+		"foreground": "#DF4"
 		}
 	},
 	{
 	"name": "Function arg",
 	"scope": "variable.parameter, variable.parameter.preprocessor, meta.function.argument, meta.function-call.arguments",
 	"settings": {
-		"foreground": "#FA4" // mandarin  "#C80" // dark yellow
+		"foreground": "#FA4"
 		}
 	},
 
@@ -555,39 +555,34 @@
 
 
 
-
-
-	
 	{
 	"name": "HTML Tag name",
 	"scope": "entity.name.tag",
 	"settings": {
-		"foreground": "#82F" // purple "#1AB" // mid cyan
+		"foreground": "#82F"
 		}
 	},
 	{
 	"name": "HTML Attribute name",
 	"scope": "entity.other.attribute-name, meta.attribute, support.type.property-name",
 	"settings": {
-		"foreground": "#FD0" // yellow "#28F" light blue
+		"foreground": "#FD0"
 		}
 	},
 	{
 	"name": "HTML Text",
 	"scope": "text.html",
 	"settings": {
-		"foreground": "#EEE" // "#ED0" sand-yellow
+		"foreground": "#EEE"
 		}
 	},
 	{
 	"name": "CSS & JSON String",
 	"scope": "string.quoted.double",
 	"settings": {
-		"foreground": "#3B3" // forest
+		"foreground": "#3B3"
 		}
 	},
-
-
 
 
 
