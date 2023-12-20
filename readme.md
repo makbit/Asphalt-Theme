@@ -1,5 +1,5 @@
 # [Asphalt Theme](https://github.com/makbit/Asphalt-Theme/)
-**An innovative and ultra-dark contrast color theme for Visual Studio Code.**
+**A high contrast dark theme made with vivid colors for Visual Studio Code.**
 
 <p align="center">
   <img src="./images/Icon-Asphalt-Theme.png" alt="MakBit Asphalt Theme Icon" width="150">
@@ -20,19 +20,19 @@
 ## Screenshot
 
 <p align="center">
-	<img alt="MakBit Asphalt Theme Screenshot C++" src="./images/screen1.png">
-	<img alt="MakBit Asphalt Theme Screenshot Python" src="./images/screen2.png">
-	<img alt="MakBit Asphalt Theme Screenshot HTML" src="./images/screen3.png">
+	<img alt="MakBit Asphalt Theme Screenshot HTML" src="./images/screen1.png">
+	<img alt="MakBit Asphalt Theme Screenshot C++" src="./images/screen2.png">
+	<img alt="MakBit Asphalt Theme Screenshot Python" src="./images/screen3.png">
 </p>
 
 ## Description
 
  - Asphalt Theme is a semantic coloring code theme for comfortable programming.
- - Fancy bright colors are used to highlight C++/HTML/Java syntax.
+ - Fancy vivid colors are used to highlight C++/HTML/Java syntax.
  - An innovative color palette features a comprehensive usage of syntax scopes, aesthetics and readability.
  - Unnecessary elements and borders are colored in grayscale, it won't distract you.
  - Theme is mainly focused on C++, Python, HTML/CSS, JavaScript development.
- - It is designed for use with Terminus (TTF) for Windows Font 14!
+ - It is recommended to use the 'Terminus (TTF) for Windows' font with size 14.
 
  ## My opinion on color selection algorithm
 
@@ -41,7 +41,8 @@
  - Yellow is for variables and Lemon is for member-variables.
  - Green is for functions and Emerald is for member-functions.
  - Magenta is used for constants and numbers.
- - Blue is for macros and preprocessor.
+ - Blue and Cyan are for macros and preprocessor.
+ - P.S. Groups: keywords, built-in types, classes/struct, functions, numbers, comments.
 
 ## Installation via VS Code
 
