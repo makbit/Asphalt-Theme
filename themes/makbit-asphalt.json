@@ -70,7 +70,7 @@
 	"activityBar.activeBackground":    "#346",
 	"activityBar.activeFocusBorder":   "#FF0",
 	"activityBarBadge.foreground":     "#CCC",
-	"activityBarBadge.background":     "#400",
+	"activityBarBadge.background":     "#C51",
 
 	"----Panel (fileList on left)":    "+",
 	"sideBarTitle.foreground":         "#F80",
@@ -115,13 +115,13 @@
 	"tab.unfocusedInactiveForeground":      "#BBB",
 	"tab.unfocusedHoverBorder":             "#000",
 	
-	"_____EDITOR_____":                     "+",
-	"editor.background":                    "#08080F",
+	"_____EDITOR_____":                     "+  #08080F",
+	"editor.background":                    "#001",
 	"editor.foreground":                    "#AAA",
-	"editor.lineHighlightBorder":           "#21273788",
-	"editor.lineHighlightBackground":       "#21273788",
-	"editorBracketMatch.border":            "#0808",
+	"editor.lineHighlightBackground":       "#4457",
+	"editor.lineHighlightBorder":           "#4445",
 	"editorBracketMatch.background":        "#1111",
+	"editorBracketMatch.border":            "#CC08",
 	"editorCursor.foreground":              "#FFF",
 	"editorCursor.background":              "#000",
 	"editorWhitespace.foreground":          "#0308",
@@ -129,18 +129,18 @@
 	"__Check...":                           "+/",
 	"editorLineNumber.foreground":          "#777",
 	"editorLineNumber.activeForeground":    "#CF0",
-	"editorGutter.background":              "#012",
+	"editorGutter.background":              "#212737",
 	"editorGutter.modifiedBackground":      "#0FF8",
 	"editorGutter.addedBackground":         "#0F08",
 	"editorGutter.deletedBackground":       "#A408",
 	"editorGutter.commentRangeForeground":  "#FF08",
 
 	"editor.selectionForeground":           "#FFF",
-	"editor.selectionBackground":           "#15A5",
-	"editor.inactiveSelectionBackground":   "#15A4",
-	"editor.hoverHighlightBackground":      "#15A8",
+	"editor.selectionBackground":           "#5557",
+	"editor.inactiveSelectionBackground":   "#4447",
+	"editor.hoverHighlightBackground":      "#28F8",
 	"editor.selectionHighlightBackground":  "#223",
-	"editor.selectionHighlightBorder":      "#4444",
+	"editor.selectionHighlightBorder":      "#454",
 
 	"_Ruler is a page area mark at 80":     "grey",
 	"editorRuler.foreground":               "#222",
@@ -153,15 +153,15 @@
 	"editor.wordHighlightStrongBackground": "#502",
 
 	"_Word match selection":                "green",
-	"Word match selection":                 "orange",
-	"editor.findMatchBorder":               "#E40",
-	"editor.findMatchBackground":           "#E408",
-	"editor.findMatchHighlightBackground":  "#AA04",
-	"editor.findMatchHighlightBorder":      "#CC04",
+	"Word match selection":                 "yellow",
+	"editor.findMatchBorder":               "#F80",
+	"editor.findMatchBackground":           "#1114",
+	"editor.findMatchHighlightBackground":  "#0408",
+	"editor.findMatchHighlightBorder":      "#0808",
 
-	"editor.findRangeHighlightBackground":  "#0F04",
+	"editor.findRangeHighlightBorder":      "#0F88",
+	"editor.findRangeHighlightBackground":  "#0554",
 	"editor.rangeHighlightBackground":      "#0704",
-	"editor.findRangeHighlightBorder":      "#080",
 	"editorLink.activeForeground":          "#28E",
 	
 	
@@ -283,7 +283,7 @@
 	"settings.checkboxForeground": "#EEE",
 	"settings.checkboxBorder":     "#555",
 
-	"terminal.background":         "#000",
+	"terminal.background":         "#001",
 	"terminal.foreground":         "#2A2",
 	"terminal.border":             "#555",
 	"terminalCursor.background":   "#040",
@@ -371,7 +371,7 @@
 	{ "name": "Doxygen",     "scope": "storage.type.class.doxygen",                   "settings": { "foreground": "#741" } },
 	{ "name": "Invalid",     "scope": "invalid",                                      "settings": { "foreground": "#E15" } },
 	{ "name": "Format%d",    "scope": "constant.other.placeholder",                   "settings": { "foreground": "#084" } },
-	{ "name": "Enum value 08F",  "scope": "variable.other.enummember",                "settings": { "foreground": "#0DA" } },
+	{ "name": "Enum value",  "scope": "variable.other.enummember",        "settings": { "foreground": "#08F" } },
 	{ "name": "Global var",  "scope": "variable.other.global",                        "settings": { "ZZfontStyle": "bold" } },
 	{ "name": "Label",       "scope": "entity.name.label",                            "settings": { "fontStyle": "bold", "foreground": "#F40" } },
 
@@ -537,7 +537,7 @@
 		"entity.name.function.preprocessor",
 		"meta.preprocessor.macro"
 	],
-	"settings": { "foreground": "#08F" }
+				"settings":       { "foreground": "#0DA" }
 	},
 	
 	{
