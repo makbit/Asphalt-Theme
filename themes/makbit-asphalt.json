@@ -70,7 +70,7 @@
 	"activityBar.activeBackground":    "#346",
 	"activityBar.activeFocusBorder":   "#FF0",
 	"activityBarBadge.foreground":     "#CCC",
-	"activityBarBadge.background":     "#C51",
+	"activityBarBadge.background":     "#282",
 
 	"----Panel (fileList on left)":    "+",
 	"sideBarTitle.foreground":         "#F80",
@@ -124,7 +124,8 @@
 	"editorBracketMatch.border":            "#CC08",
 	"editorCursor.foreground":              "#FFF",
 	"editorCursor.background":              "#000",
-	"editorWhitespace.foreground":          "#0308",
+
+	"editorWhitespace.foreground":          "#0777",
 
 	"__Check...":                           "+/",
 	"editorLineNumber.foreground":          "#777",
@@ -371,8 +372,6 @@
 	{ "name": "Doxygen",     "scope": "storage.type.class.doxygen",                   "settings": { "foreground": "#741" } },
 	{ "name": "Invalid",     "scope": "invalid",                                      "settings": { "foreground": "#E15" } },
 	{ "name": "Format%d",    "scope": "constant.other.placeholder",                   "settings": { "foreground": "#084" } },
-	{ "name": "Enum value",  "scope": "variable.other.enummember",        "settings": { "foreground": "#08F" } },
-	{ "name": "Global var",  "scope": "variable.other.global",                        "settings": { "ZZfontStyle": "bold" } },
 	{ "name": "Label",       "scope": "entity.name.label",                            "settings": { "fontStyle": "bold", "foreground": "#F40" } },
 
 	{
@@ -384,7 +383,7 @@
 		"keyword.other.unit",
 		"entity.name.type.parameter"
 		],
-	"settings": { "foreground": "#F08" }
+	"settings": { "foreground": "#F4F" }
 	},
 
 	{
@@ -393,7 +392,7 @@
 		"constant.language",
 		"constant.other"
 		],
-	"settings": { "foreground": "#F0F" }
+	"settings": { "foreground": "#F08" }
 	},
 	
 	{
@@ -423,6 +422,8 @@
 		],
 	"settings": { "foreground": "#FE2" }
 	},
+	{ "name": "Enum value (#0DA)",  "scope": "variable.other.enummember",  "settings": { "foreground": "#0DA" } },
+	{ "name": "Global var",  "scope": "variable.other.global", "settings": { "fontStyle": "bold" } },
 
 	{
 	"name": "Arguments (Variable)",
@@ -436,7 +437,6 @@
 		],
 	"settings": { "foreground": "#FA2" }
 	},
-
 
 	{
 	"name": "Class/member variable",
@@ -453,28 +453,6 @@
 	"settings": { "foreground": "#CF2" }
 	},
 	
-
-	{
-	"name": "Function",
-	"scope":[
-		"entity.name.function",
-		"entity.name.function.definition",
-		"entity.name.function.call",
-		"support.function",
-		"meta.function.lua",
-		"meta.function.type-declaration",
-		"meta.function-call",
-		"meta.function-call.generic",
-		"meta.method",
-		"meta.method-call",
-		"meta.method.declaration",
-		"variable.language.super.ts"
-		],
-	"settings": { "foreground": "#4F0" }
-	},
-
-	{ "name": "Class member-function", "scope":[ "entity.name.function.member" ], "settings": { "foreground": "#0F4" } },
-
 	{
 	"name": "Storage modifier (extern, friend, this, &)",
 	"scope":[
@@ -514,7 +492,28 @@
 	"settings": { "foreground": "#FFF" }
 	},
 
-	
+	{
+	"name": "Function",
+	"scope":[
+		"entity.name.function",
+		"entity.name.function.definition",
+		"entity.name.function.call",
+		"support.function",
+		"meta.function",
+		"meta.function.lua",
+		"meta.function.type-declaration",
+		"meta.function-call",
+		"meta.function-call.generic",
+		"meta.method",
+		"meta.method-call",
+		"meta.method.declaration",
+		"variable.language.super.ts"
+		],
+	"settings": { "foreground": "#4F0" }
+	},
+
+	{ "name": "Class member-function", "scope":[ "entity.name.function.member" ], "settings": { "foreground": "#0F4" } },
+
 	{
 	"name": "Preprocessor: (#include, #define)",
 	"scope":[
@@ -527,7 +526,7 @@
 		"meta.import.elm",
 		"punctuation.definition.directive",
 		"variable.control.import.include"
-	],
+		],
 	"settings": { "fontStyle": "regular", "foreground": "#FFF" }
 	},
 
@@ -536,8 +535,8 @@
 	"scope":[
 		"entity.name.function.preprocessor",
 		"meta.preprocessor.macro"
-	],
-				"settings":       { "foreground": "#0DA" }
+		],
+	"settings": { "foreground": "#08F" }
 	},
 	
 	{
